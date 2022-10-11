@@ -8,9 +8,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/algorithms")
+@app.route("/seleccion")
 def algorithms():
-    return render_template("algorithms.html")
+    return render_template("algoriSelec.html")
 
 
 if __name__ == "__main__":
