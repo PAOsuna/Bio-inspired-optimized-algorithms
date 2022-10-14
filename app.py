@@ -12,6 +12,9 @@ def index():
 def algorithms():
     return render_template("algoriSelec.html")
 
+@app.route("/remplazo")
+def remplazo():
+    return render_template("estrRem.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
