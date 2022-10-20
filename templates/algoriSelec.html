@@ -8,36 +8,59 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="Card image cap">
-                <h5 class="card-title">Ruleta</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card">
+                <h1 class="card-title text-center">Ruleta</h1>
+                 <div class="card-body">
+                    <p class="card-text text-dark ">
+                    Propuesto por DeJong, es posiblemente el método más utilizado desde los orígenes de los Algoritmos Genéticos [Blickle and Thiele, 1995].
+                   </p>
+                   <p class="card-text text-dark">
+                    A cada uno de los individuos de la población se le asigna una parte proporcional a su ajuste de una ruleta, de tal forma que la suma de todos los porcentajes sea la unidad. Los mejores individuos recibirán una porción de la ruleta mayor que la recibida por los peores. Generalmente la población está ordenada en base al ajuste por lo que las porciones más grandes se encuentran al inicio de la ruleta.
+                    Para seleccionar un individuo basta con generar un número aleatorio del intervalo [0..1] y devolver el individuo situado en esa posición de la ruleta. Esta posición se suele obtener recorriendo los individuos de la población y acumulando sus proporciones de ruleta hasta que la suma exceda el valor obtenido.
+                    Es un método muy sencillo, pero ineficiente a medida que aumenta el tamaño de la población (su complejidad es $ O(n^2)$). Presenta además el inconveniente de que el peor individuo puede ser seleccionado más de una vez.
+                  </p>
+                </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card text-center mt-2" style="width: 22rem;">
+                    <div class="card-body">
+                       <img src="https://github.com/rafaelsanchezbaez/primerrepositorio/blob/master/ruleta.png?raw=true" class="card-img-top" alt="...">
+                   </div>
+                 </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center mt-2" style="width: 22rem;">
+                    <div class="card-body">
+                       <img src="https://github.com/rafaelsanchezbaez/primerrepositorio/blob/master/ruleta.png?raw=true" class="card-img-top" alt="...">
+                   </div>
+                 </div>
                 </div>
               </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <h5 class="card-title">Torneo</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <h5 class="card-title">Estocastica universal</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-    </div>
+      </div>
 </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card mt-2">
+        <h1 class="card-title text-center"></h1>
+        <div class="card-body">
+          <p class="card-text text-dark ">
+            Propuesto por DeJong, es posiblemente el método más utilizado desde los orígenes de los Algoritmos Genéticos [Blickle and Thiele, 1995].
+          </p>
+          <p class="card-text text-dark">
+            A cada uno de los individuos de la población se le asigna una parte proporcional a su ajuste de una ruleta, de tal forma que la suma de todos los porcentajes sea la unidad. Los mejores individuos recibirán una porción de la ruleta mayor que la recibida por los peores. Generalmente la población está ordenada en base al ajuste por lo que las porciones más grandes se encuentran al inicio de la ruleta.
+            Para seleccionar un individuo basta con generar un número aleatorio del intervalo [0..1] y devolver el individuo situado en esa posición de la ruleta. Esta posición se suele obtener recorriendo los individuos de la población y acumulando sus proporciones de ruleta hasta que la suma exceda el valor obtenido.
+            Es un método muy sencillo, pero ineficiente a medida que aumenta el tamaño de la población (su complejidad es $ O(n^2)$). Presenta además el inconveniente de que el peor individuo puede ser seleccionado más de una vez.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
  
+</div>
+</div>
 </div>
 
 
