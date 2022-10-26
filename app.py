@@ -16,6 +16,10 @@ def algorithms():
 def remplazo():
     return render_template("estrRem.html")
 
+@app.route("/pso")
+def pso():
+    return render_template("pso.html")
+
 def page_not_found(e):
     return render_template("404.html"), 404
 
