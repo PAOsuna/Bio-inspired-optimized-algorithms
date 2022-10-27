@@ -6,47 +6,105 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card border-dark">
                     <div class="card-header bg-info">
                     <h1 class="card-title text-center">Optimización por enjambre de partículas</h1>
                     </div>
-                    <p class="card-text text-dark text-justify"> 
-                        En informática, la optimización por nube de
-                        partículas u optimización por enjambre de
-                        partículas (conocida por sus siglas en  inglés : PSO, de «particle
-                        swarm optimization») hace referencia a una metaheurística que
-                        evoca el comportamiento de las partículas en la naturaleza. 
-                    </p>
-                    <p class="card-text text-dark text-justify">
-                        Los métodos PSO se atribuyen originalmente a los investigadores
-                        Kennedy, Eberhart y Shi. En un principio fueron concebidos para
-                        elaborar modelos de conductas sociales, como el movimiento
-                        descrito por los organismos vivos en una bandada de aves o un
-                        banco de peces. Posteriormente el algoritmo se simplificó y se
-                        comprobó que era adecuado para problemas de optimización. El
-                        libro de Kennedy y Eberhart describe numerosos aspectos
-                        teóricos de la PSO y la  inteligencia de enjambre . Un amplio
-                        estudio de las aplicaciones de PSO se puede encontrar en Poli.
-                    </p>
-                    <p class="card-text text-dark text-justify">
-                        PSO permite optimizar un problema a partir de una población
-                        de  soluciones candidatas , denotadas como &quot;partículas&quot;,
-                        moviendo éstas por todo el  espacio de búsqueda  según reglas
-                        matemáticas que tienen en cuenta la posición y la velocidad de
-                        las partículas. El movimiento de cada partícula se ve influido por
-                        su mejor posición local hallada hasta el momento, así como por
-                        las mejores posiciones globales encontradas por otras partículas
-                        a medida que recorren el espacio de búsqueda. El fundamento
-                        teórico de esto es hacer que la nube de partículas converja
-                        rápidamente hacia las mejores soluciones.
-                    </p>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify"> 
+                            En informática, la optimización por nube de
+                            partículas u optimización por enjambre de
+                            partículas (conocida por sus siglas en  inglés : PSO, de «particle
+                            swarm optimization») hace referencia a una metaheurística que
+                            evoca el comportamiento de las partículas en la naturaleza. 
+                        </p>
+                        <p class="card-text text-dark text-justify">
+                            Los métodos PSO se atribuyen originalmente a los investigadores
+                            Kennedy, Eberhart y Shi. En un principio fueron concebidos para
+                            elaborar modelos de conductas sociales, como el movimiento
+                            descrito por los organismos vivos en una bandada de aves o un
+                            banco de peces. Posteriormente el algoritmo se simplificó y se
+                            comprobó que era adecuado para problemas de optimización. El
+                            libro de Kennedy y Eberhart describe numerosos aspectos
+                            teóricos de la PSO y la  inteligencia de enjambre . Un amplio
+                            estudio de las aplicaciones de PSO se puede encontrar en Poli.
+                        </p>
+                        <p class="card-text text-dark text-justify">
+                            PSO permite optimizar un problema a partir de una población
+                            de  soluciones candidatas , denotadas como &quot;partículas&quot;,
+                            moviendo éstas por todo el  espacio de búsqueda  según reglas
+                            matemáticas que tienen en cuenta la posición y la velocidad de
+                            las partículas. El movimiento de cada partícula se ve influido por
+                            su mejor posición local hallada hasta el momento, así como por
+                            las mejores posiciones globales encontradas por otras partículas
+                            a medida que recorren el espacio de búsqueda. El fundamento
+                            teórico de esto es hacer que la nube de partículas converja
+                            rápidamente hacia las mejores soluciones.
+                        </p>
+                        <p class="card-text text-dark text-justify">
+                            PSO es una  metaheurística , ya que asume pocas o ninguna
+                            hipótesis sobre el problema a optimizar y puede aplicarse en
+                            grandes espacios de  soluciones candidatas . Sin embargo, como
+                            toda metaheurística, PSO no garantiza la obtención de una
+                            solución óptima en todos los casos.
+                        </p>
+                    </div>
+                    
                 </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card text-center mt-2" style="width: 33rem;">
+                          <div class="card-body">
+                             <img src="https://miro.medium.com/max/1400/1*hpnzy5dNYtp1qC1MsN9cGQ.gif" class="card-img-top" alt="...">
+                         </div>
+                       </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center mt-2" style="width: 22rem;">
+                          <div class="card-body">
+                             <img src="" class="card-img-top" alt="...">
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
         </div>
 
     </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mt-2 border-dark">
+                    <div class="card-header bg-danger">
+                        <h1 class="card-title text-center">Analogia con la naturaleza</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+                            Las  abejas  en busca de alimento tratan de localizar la región del
+                            espacio con mayor densidad de flores, ya que es allí donde
+                            presumiblemente existe más cantidad de  polen . Cada abeja vuela
+                            de modo errático por el espacio, recordando en todo momento
+                            cuál es la región donde ha visto más flores. A su vez, el enjambre
+                            sabe colectivamente cuál es la región del espacio, de entre todas
+                            las exploradas, donde se han encontrado más flores. Cada abeja
+                            variará individualmente su movimiento con arreglo a estas dos
+                            direcciones, volando hacia algún lugar intermedio. Es posible que
+                            la abeja durante ese sobrevuelo encuentre una región con más
+                            densidad de flores que la conocida hasta entonces ( óptimo local ),
+                            o incluso que la conocida por el enjambre (óptimo global); en este
+                            último caso, todo el enjambre orientará la búsqueda hacia esa
+                            nueva dirección. Pasado un tiempo, si se descubre otra región
+                            con mayor densidad floral, el enjambre reorientará nuevamente la
+                            búsqueda hacia allí, y así sucesivamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

@@ -19,7 +19,9 @@ def remplazo():
 @app.route("/pso")
 def pso():
     return render_template("pso.html")
-
+@app.route("/cruce")
+def cruce():
+    return render_template("cruce.html")
 def page_not_found(e):
     return render_template("404.html"), 404
 
