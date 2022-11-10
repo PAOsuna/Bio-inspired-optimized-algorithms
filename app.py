@@ -26,7 +26,10 @@ def pso():
 @app.route("/cruce")
 def cruce():
     return render_template("cruce.html")
-
+    
+@app.route("/aco")
+def aco():
+    return render_template("aco.html")
 
 def page_not_found(e):
     return render_template("404.html"), 404
