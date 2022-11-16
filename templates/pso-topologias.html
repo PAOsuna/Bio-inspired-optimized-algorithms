@@ -1,0 +1,28 @@
+{% extends "/base.html" %}
+{% block titile %} HomePage {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Topologías
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+La PSO básica suele incurrir fácilmente en óptimos locales. Esta convergencia prematura puede evitarse ignorando la mejor posición global g conocida, y atendiendo en su lugar a la mejor posición l conocida del sub-enjambre "circundante" a la partícula en movimiento. Este sub-enjambre puede definirse geométricamente –por ej. "las m partículas más cercanas"– o bien de forma social, es decir, como un conjunto de partículas relacionadas, con independencia de la distancia que las separa.
+Si suponemos que existe un vínculo de información entre cada partícula y sus adyacentes, el conjunto de estos vínculos constituye un grafo, una red de comunicación, denominada topología. Una topología social muy frecuente es el anillo, en donde cada partícula tiene sólo dos partículas adyacentes, pero hay muchas otras. La topología no es necesariamente fija, puede ser adaptativa según el caso (SPSO, estrella estocástica, TRIBES, Cyber Swarm, C-PSO).
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

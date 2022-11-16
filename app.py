@@ -31,6 +31,28 @@ def cruce():
 def aco():
     return render_template("aco.html")
 
+@app.route("/pso-algoritmo")
+def psoAlgoritmo():
+    return render_template("pso-algoritmo.html")
+
+@app.route("/pso-parametro")
+def psoParametro():
+    return render_template("pso-parametros.html")
+
+@app.route("/pso-topologias")
+def psoTopologias():
+    return render_template("pso-topologias.html")
+
+@app.route("/pso-funcionamiento")
+def psoFuncionamiento():
+    return render_template("pso-funcionamiento.html")
+
+@app.route("/pso-variantes")
+def psoVariantes():
+    return render_template("pso-variantes.html")
+
+
+
 def page_not_found(e):
     return render_template("404.html"), 404
 

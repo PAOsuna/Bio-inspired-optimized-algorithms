@@ -1,0 +1,32 @@
+{% extends "/base.html" %}
+{% block titile %} HomePage {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Algoritmo
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+                            Un algoritmo PSO trabaja con una población (llamada nube o enjambre) de soluciones candidatas (llamadas partículas). Dichas partículas se desplazan a lo largo del espacio de búsqueda conforme unas simples reglas matemáticas. El movimiento de cada partícula depende de su mejor posición obtenida, así como de la mejor posición global hallada en todo el espacio de búsqueda. A medida que se descubren nuevas y mejores posiciones, éstas pasan a orientar los movimientos de las partículas. El proceso se repite con el objetivo, no garantizado, de hallar en algún momento una solución lo suficientemente satisfactoria.
+Lo descrito anteriormente puede formalizarse del siguiente modo: sea f: ℝn → ℝ la función de coste que se desea minimizar. La función f toma como argumento una solución candidata, representada como un vector de números reales, y da como salida un número real que indica el valor de la función objetivo para la solución candidata obtenida. Las mejores posiciones se corresponden con los mejores valores de la función objetivo f. El objetivo es hallar una solución a que verifique f(a) ≤ f(b) para todo b en el espacio de búsqueda, lo que implicaría que a es el mínimo global. El proceso inverso, útil en problemas de maximización, puede lograrse considerando una función h = -f.
+Sea S el número de partículas en la nube, cada una de las cuales tiene una posición xi ∈ ℝn en el espacio de búsqueda y una velocidad vi ∈ ℝn. Sea pi la mejor posición conocida de una partícula i, y g la mejor posición global conocida.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

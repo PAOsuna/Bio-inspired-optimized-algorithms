@@ -1,0 +1,114 @@
+{% extends "/base.html" %}
+{% block titile %} HomePage {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Variantes
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+                          Incluso un algoritmo básico de PSO puede dar lugar a numerosas variantes. Por ejemplo, hay diferentes formas de inicializar las partículas y sus velocidades, de regular la velocidad, de actualizar p y g una vez que todo el enjambre ha sido actualizado, etc. Algunas de estas opciones y su impacto potencial en el rendimiento han sido discutidos en la literatura especializada.
+Como resultado, constantemente surgen nuevas y más sofisticadas variantes de PSO con el fin de mejorar el rendimiento del proceso de optimización. En la investigación llevada a cabo pueden distinguirse ciertas tendencias; una es lograr un método de optimización híbrido que combine PSO con otros mecanismos optimizadores, por ej. incorporando un método eficaz de aprendizaje. Otra vía de investigación trata de contrarrestar la convergencia prematura (es decir, el estancamiento de la búsqueda en un óptimo local), por ej. invirtiendo o perturbando el movimiento de las partículas. Otro de los enfoques propone lidiar con la convergencia prematura mediante el uso de múltiples enjambres (optimización multi-enjambre); esta estrategia multi-enjambre también es aplicable a la optimización multiobjetivo. Asimismo, se han producido avances en la adaptación de los parámetros de comportamiento durante la optimización.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Simplificaciones
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+Como se apuntó anteriormente, existe una corriente de opinión que considera que la PSO debe simplificarse tanto como sea posible, mientras no afecte al rendimiento, en aplicación de la navaja de Occam. La simplificación de la PSO fue propuesta originalmente por Kennedy, y desde entonces ha sido ampliamente estudiada. Con su puesta en práctica se han observado mejoras en el rendimiento, mayor facilidad para ajustar los parámetros y un comportamiento más consistente ante distintos problemas de optimización.
+Otro argumento a favor de la simplificación es que sólo puede probarse empíricamente la eficacia de una metaheurística haciendo ensayos sobre un número finito de problemas de optimización. Esto significa que una metaheurística como PSO no puede validarse, lo que aumenta el riesgo de cometer errores en su descripción e implementación. Una buena muestra de ello fue una variante prometedora de un algoritmo genético (otra popular metaheurística), que más tarde se reveló defectuosa al presentar una búsqueda de optimización fuertemente sesgada; el sesgo se debía a un error de programación, que ya ha sido corregido.
+Si se desea inicializar la velocidad asociada a las partículas se requieren entradas adicionales. Una variante simple es la "optimización con enjambre de partículas aceleradas" (APSO), que permite acelerar la convergencia en muchas aplicaciones. Un sencillo código de ejemplo de APSO está disponible on-line.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Optimización multiobjetivo
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+La PSO también se ha aplicado a problemas multiobjetivo, en los que la evaluación de la función objetivo tiene en cuenta la "dominancia de Pareto" al mover las partículas, de manera que las soluciones no-dominadas son aproximadas al frente de Pareto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            PSO binaria, discreta y combinatoria
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+Como las ecuaciones usadas en PSO operan con números reales, un método común a la hora de resolver problemas discretos es mapear el espacio de búsqueda a un dominio continuo, para aplicar PSO clásica, y luego desmapear el resultado. El proceso de mapeo puede consistir en una conversión muy simple (por ej. redondeo de valores) o, por el contrario, bastante compleja.
+Sin embargo, las ecuaciones de movimiento hacen uso de operadores que controlan cuatro acciones:
+                        </p>
+                        <ul class="card-text text-dark text-justify">
+                            <li>
+                                calcular la diferencia entre dos posiciones (el resultado define un desplazamiento)
+                            </li>
+                            <li>
+                                multiplicar una velocidad por un coeficiente numérico
+                            </li>
+                            <li>
+                                sumar dos velocidades
+                            </li>
+                            <li>
+                                aplicar una velocidad a una posición
+                            </li>
+                        </ul>
+                        <p class="card-text text-dark text-justify">
+Generalmente, la posición y la velocidad están representadas por n números reales, y los operadores básicos son -, *, +. Pero tales entidades matemáticas pueden definirse de una manera completamente diferente, a fin de hacer frente a problemas binarios (o discretos, en un sentido más amplio), e incluso combinatorios.   . Una estrategia es redefinir los operadores como basados en conjuntos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
