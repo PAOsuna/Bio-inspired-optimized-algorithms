@@ -26,31 +26,36 @@ def pso():
 @app.route("/cruce")
 def cruce():
     return render_template("cruce.html")
-    
+
+
 @app.route("/aco")
 def aco():
     return render_template("aco.html")
 
+
 @app.route("/pso-algoritmo")
-def psoAlgoritmo():
+def psoalgoritmo():
     return render_template("pso-algoritmo.html")
+
 
 @app.route("/pso-parametro")
 def psoParametro():
     return render_template("pso-parametros.html")
 
+
 @app.route("/pso-topologias")
-def psoTopologias():
+def psotopologias():
     return render_template("pso-topologias.html")
 
+
 @app.route("/pso-funcionamiento")
-def psoFuncionamiento():
+def psofuncionamiento():
     return render_template("pso-funcionamiento.html")
 
-@app.route("/pso-variantes")
-def psoVariantes():
-    return render_template("pso-variantes.html")
 
+@app.route("/pso-variantes")
+def psovariantes():
+    return render_template("pso-variantes.html")
 
 
 def page_not_found(e):
