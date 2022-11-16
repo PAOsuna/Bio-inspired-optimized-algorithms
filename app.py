@@ -39,7 +39,7 @@ def psoalgoritmo():
 
 
 @app.route("/pso-parametro")
-def psoParametro():
+def psoparametro():
     return render_template("pso-parametros.html")
 
 
