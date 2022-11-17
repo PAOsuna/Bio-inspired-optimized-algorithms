@@ -2,5 +2,46 @@
 {% block titile %} Algoritmos {% endblock %}
 
 {% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark text-white">
+                        <h1 class="card-title text-center">Estrategias de remplazo</h1>
+                    </div>
+                    <div class="card-body bg-light "> 
+                        <p class="card-text text-dark text-justify">
+                            Cuando en vez de trabajar con una población temporal se hace con una única población, 
+                            sobre la que se realizan las selecciones e inserciones, deberá tenerse en cuenta que para 
+                            insertar un nuevo individuo deberá de eliminarse previamente otro de la población. Existen diferentes 
+                            métodos de reemplazo:
+                        </p>
+                        <p class="card-text text-dark text-justify">
+                           <ul class="text-dark text-justify">
+                            <li>
+                                Aleatorio: el nuevo individuo se inserta en un lugar cualquiera de la población.
+                            </li>
+                            <li>
+                                Reemplazo de padres: se obtiene espacio para la nueva descendencia liberando el espacio ocupado por los padres.
 
+                            </li>
+                            <li>
+                                Reemplazo de similares: una vez obtenido el ajuste de 
+                                la descendencia se selecciona un grupo de individuos (entre seis y diez) de la población con un ajuste similar. Se reemplazan aleatoriamente los que sean necesarios.
+                            </li>
+                            <li>
+                                Reemplazo de los peores: de entre un porcentaje de los peores individuos de la población se seleccionan aleatoriamente los necesarios para dejar sitio a la descendencia.
+                            </li>
+                           </ul>
+                            
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
 {% endblock %}
