@@ -57,6 +57,10 @@ def psofuncionamiento():
 def psovariantes():
     return render_template("pso-variantes.html")
 
+@app.route("/aco-hormNatu")
+def acohormNat():
+    return render_template("aco-hormNatu.html")
+
 
 def page_not_found(e):
     return render_template("404.html"), 404
