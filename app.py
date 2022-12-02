@@ -27,6 +27,9 @@ def pso():
 def cruce():
     return render_template("cruce.html")
 
+@app.route("/mutacion")
+def mutacion():
+    return render_template("muta.html")
 
 @app.route("/aco")
 def aco():
