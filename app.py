@@ -61,6 +61,9 @@ def psovariantes():
 def acohormNat():
     return render_template("aco-hormNatu.html")
 
+@app.route("/testalgoritmoGene")
+def testalgoritmoGene():
+    return render_template("testalgoritmoGene.html")
 
 def page_not_found(e):
     return render_template("404.html"), 404
