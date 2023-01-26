@@ -5,7 +5,6 @@ from matplotlib.animation import FuncAnimation;
 import numpy;
 from itertools import count;
 
-os.chdir
 print(os.getcwd())
 os.chdir("C:/Users/aleja/Desktop/Bio-inspired-optimized-algorithms/plots/input")
 print(os.getcwd())
