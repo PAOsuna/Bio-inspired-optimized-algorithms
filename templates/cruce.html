@@ -5,12 +5,9 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="card border-dark">
-                    <div class="card-header bg-dark text-white">
+            <div class="col-6">
                         <h1 class="card-title text-center">Cruce</h1>
-                    </div>
-                    <div class="card-body bg-light ">
+                  
                         <p class="card-text text-dark text-justify">
                             Una vez seleccionados los individuos, éstos son recombinados 
                             para producir la descendencia que se insertará en la siguiente 
@@ -21,29 +18,10 @@
                             Su importancia para la transición entre generaciones es elevada 
                             puesto que las tasas de cruce con las que se suele trabajar rondan el 90%.
                         </p>
-                        <p class="card-text text-dark text-justify">
-                            Los diferentes métodos de cruce podrán operar de dos formas diferentes. 
-                            Si se opta por una estrategia destructiva los descendientes se insertarán 
-                            en la población temporal aunque sus padres tengan mejor ajuste (trabajando 
-                            con una única población esta comparación se realizará con los individuos a reemplazar). 
-                            Por el contrario utilizando una estrategia no destructiva la descendencia pasará a la 
-                            siguiente generación únicamente si supera la bondad del ajuste de los padres (o de los 
-                            individuos a reemplazar). La idea principal del cruce se basa en que, si se toman dos 
-                            individuos correctamente adaptados al medio y se obtiene una descendencia que comparta 
-                            genes de ambos, existe la posibilidad de que los genes heredados sean precisamente los 
-                            causantes de la bondad de los padres. Al compartir las características buenas de dos 
-                            individuos, la descendencia, o al menos parte de ella, debería tener una bondad mayor 
-                            que cada uno de los padres por separado. Si el cruce no agrupa las mejores características 
-                            en uno de los hijos y la descendencia tiene un peor ajuste que los padres no significa que 
-                            se esté dando un paso atrás. Optando por una estrategia de cruce no destructiva garantizamos 
-                            que pasen a la siguiente generación los mejores individuos. Si, aún con un ajuste peor, se opta 
-                            por insertar a la descendencia, y puesto que los genes de los padres continuarán en la población
-                            aunque dispersos y posiblemente levemente modificados por la mutación en posteriores cruces se 
-                            podrán volver a obtener estos padres, recuperando así la bondad previamente perdida.
-                            </p>
-                    </div>
-                </div>
-                <div class="container">
+
+            </div>
+            <div class="col-6">
+                <div class="container mt-5">
                     <div class="row">
                       <div class="col">
                         <div class="card text-center mt-2" style="width: auto">
@@ -58,7 +36,61 @@
                     </div>
                   </div>
             </div>
+            <div class="col-12">
+                <p class="text-dark text-justify">
+                    Los diferentes métodos de cruce podrán operar de dos formas diferentes. 
+                    Si se opta por una estrategia destructiva los descendientes se insertarán 
+                    en la población temporal aunque sus padres tengan mejor ajuste (trabajando 
+                    con una única población esta comparación se realizará con los individuos a reemplazar). 
+                    Por el contrario utilizando una estrategia no destructiva la descendencia pasará a la 
+                    siguiente generación únicamente si supera la bondad del ajuste de los padres (o de los 
+                    individuos a reemplazar). 
+                </p>
+                    
+            </div>
+            
+            <div class="col-7">
+                <p class="text-dark text-justify">
+                    La idea principal del cruce se basa en que, si se toman dos 
+                individuos correctamente adaptados al medio y se obtiene una descendencia que comparta 
+                genes de ambos, existe la posibilidad de que los genes heredados sean precisamente los 
+                causantes de la bondad de los padres. 
+                </p>
+            </div>
+            <div class="col-5 mt-4">
+                <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/10/crossover.png" class="img-fluid" alt="...">
+                <div class="card-body text-center mt-2">
+                    <h6 text-dark text-justify>
+                        Ejemplo graficó de la operación de cruce.
+                    <h6/>
+                    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target=".bd-example-modal-lg">Ver imagen</button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/10/crossover.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-12">
+                <p class="text-dark text-justify" >
+                Al compartir las características buenas de dos 
+                individuos, la descendencia, o al menos parte de ella, debería tener una bondad mayor 
+                que cada uno de los padres por separado. Si el cruce no agrupa las mejores características 
+                en uno de los hijos y la descendencia tiene un peor ajuste que los padres no significa que 
+                se esté dando un paso atrás. Optando por una estrategia de cruce no destructiva garantizamos 
+                que pasen a la siguiente generación los mejores individuos. Si, aún con un ajuste peor, se opta 
+                por insertar a la descendencia, y puesto que los genes de los padres continuarán en la población
+                aunque dispersos y posiblemente levemente modificados por la mutación en posteriores cruces se 
+                podrán volver a obtener estos padres, recuperando así la bondad previamente perdida.
+                </p>
+            </div>
         </div>
+       
     </div>
 </div>
 {% endblock %}
+
+
