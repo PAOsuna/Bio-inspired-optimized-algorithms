@@ -68,6 +68,11 @@ def acohormNat():
 def testalgoritmoGene():
     return render_template("testalgoritmoGene.html")
 
+
+@app.route("/ejeralgogene")
+def ejeralgogene():
+    return render_template("ejeralgogene.html")
+
 def page_not_found(e):
     return render_template("404.html"), 404
 
