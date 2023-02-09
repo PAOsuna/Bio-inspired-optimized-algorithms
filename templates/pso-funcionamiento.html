@@ -1,0 +1,80 @@
+{% extends "/base.html" %}
+{% block titile %} HomePage {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Funcionamiento interno
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+Hay diversas interpretaciones en cuanto a cómo y por qué un algoritmo de PSO es capaz de optimizar variables.
+Una noción comúnmente aceptada por los investigadores es que el "comportamiento de enjambre" varía entre un "comportamiento de exploración" (de búsqueda en una amplia región del espacio de soluciones) y un "comportamiento de explotación" (de búsqueda local que se aproxima rápidamente hacia un óptimo, posiblemente local). Este es el criterio predominante desde los inicios de la PSO, y sostiene que el algoritmo de PSO y sus parámetros han de ser cuidadosamente seleccionados para lograr un equilibrio idóneo entre exploración y explotación, a fin de evitar una convergencia prematura hacia óptimos locales, y, al mismo tiempo, asegurar una buena tasa de convergencia al óptimo global. Esta interpretación ha dado pie a numerosas variantes dentro de la PSO, como se expone más adelante.
+Otra perspectiva aduce que aún no se ha logrado comprender exactamente cómo afecta el comportamiento del enjambre a la calidad del proceso de optimización, especialmente en problemas de optimización con espacios de búsqueda multidimensionales, discontinuos o variables en el tiempo. Desde este punto de vista, bastaría con encontrar algoritmos y parámetros que en la práctica den como resultado un buen rendimiento, independientemente de qué balance entre exploración y explotación adopte el enjambre. Este planteamiento ha llevado a simplificar los algoritmos de PSO, como se explica en un apartado posterior.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Convergencia
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+                            En el contexto de la PSO, el término "convergencia" suele emplearse con dos significados (a veces considerados erróneamente como sinónimos):
+                        </p>
+                        <ul class="card-text text-dark text-justify">
+                        <li>Convergencia puede referirse a la mejor posición global g conocida, que se aproxima (converge) al óptimo del problema, independientemente de cómo se comporte el enjambre.</li>
+                        <li>Convergencia puede referirse a una concentración del enjambre, donde todas las partículas confluyen hacia un punto del espacio de búsqueda, que puede o no ser el óptimo.</li>
+                    </ul>
+                        <p class="card-text text-dark text-justify">
+                        En la literatura especializada pueden encontrarse algunos intentos de analizar matemáticamente la convergencia en PSO. Estos análisis han servido para establecer pautas de selección de los parámetros que determinarían la convergencia, divergencia u oscilación de las partículas del enjambre, lo que a la postre ha propiciado nuevas variantes en la PSO. No obstante, estos análisis han sido objeto de críticas al ser considerados demasiado simplistas, toda vez que asumen que el enjambre posee una sola partícula, sin variables aleatorias, y que la mejor posición p conocida de la partícula y la mejor posición global g del enjambre permanecen constantes durante el proceso de optimización. Asimismo, ciertos análisis admiten un número infinito de iteraciones en la optimización, lo cual no es posible en un escenario real. Por tanto, el estudio de las características de convergencia de los diversos algoritmos de PSO y sus parámetros asociados está fuertemente ligado a los resultados empíricos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark">
+                        <h1 class="card-title text-center text-white">
+                            Sesgos
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-dark text-justify">
+A medida que el algoritmo de PSO avanza, dimensión por dimensión, el punto solución es más fácil de encontrar si se halla en un eje del espacio de búsqueda, en una diagonal o, aún más fácil, si está justo en el centro.
+Una primera forma de evitar este sesgo, permitiendo hacer comparaciones más ponderadas, es por ejemplo tomar como referencia problemas no sesgados, y luego rotarlos o desplazarlos. Otra opción es modificar el propio algoritmo para hacerlo menos sensible al sistema de coordenadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

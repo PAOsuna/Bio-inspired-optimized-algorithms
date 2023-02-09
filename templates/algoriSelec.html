@@ -1,0 +1,116 @@
+{% extends "/base.html" %}
+{% block titile %} Algoritmos {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h1 class="text-center ">Ruleta</h1>
+
+        <p class="text-dark text-justify">
+          Propuesto por DeJong, es posiblemente el método más utilizado desde los orígenes de los Algoritmos Genéticos [Blickle and Thiele, 1995].
+         </p>
+         <p class=" text-dark text-justify">
+          A cada uno de los individuos de la población se le asigna una parte proporcional a su ajuste de una ruleta, de tal forma que la suma de todos los porcentajes sea la unidad. Los mejores individuos recibirán una porción de la ruleta mayor que la recibida por los peores. Generalmente la población está ordenada en base al ajuste por lo que las porciones más grandes se encuentran al inicio de la ruleta.
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <div class="card text-center mt-2" style="width: 25rem;">
+               
+                  <img src="https://github.com/rafaelsanchezbaez/primerrepositorio/blob/master/Grafica%20redonda.gif?raw=true" class="card-img-top" alt="...">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p class="text-dark text-justify">
+          Para seleccionar un individuo basta con generar un número aleatorio del intervalo [0..1] y devolver el individuo situado en esa posición de la ruleta. Esta posición se suele obtener recorriendo los individuos de la población y acumulando sus proporciones de ruleta hasta que la suma exceda el valor obtenido.
+      Es un método muy sencillo, pero ineficiente a medida que aumenta el tamaño de la población (su complejidad es <img src="http://sabia.tic.udc.es/mgestal/cv/AAGGtutorial/img9.gif" alt="">. Presenta además el inconveniente de que el peor individuo puede ser seleccionado más de una vez.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div  class="col-4">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col">
+              <div class="card text-center mt-2" style="width: 20rem;">
+                <img src="https://www.researchgate.net/profile/Diego-Tejada-Arango/publication/319148991/figure/fig9/AS:668596023869446@1536417122345/Proceso-de-seleccion-por-torneo-Fuente-autores.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h6 text-dark text-justify>
+                    Ejemplo graficó de la operación de torneo.
+                </h6>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Ver imagen</button>
+
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <img src="https://www.researchgate.net/profile/Diego-Tejada-Arango/publication/319148991/figure/fig9/AS:668596023869446@1536417122345/Proceso-de-seleccion-por-torneo-Fuente-autores.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+       <div class="container mt-2">
+        <h1 class="text-center ">Torneo</h1>
+
+        <p class="text-dark text-justify">
+          La idea principal de este método consiste en realizar la selección en base a comparaciones directas entre individuos. Existen dos versiones de selección mediante torneo:
+          <div class="list-group">
+            <li class="list-group-item list-group-item-action text-dark">
+              <h6>
+                Determinística
+              </h6>
+            </li>
+            <li class="list-group-item list-group-item-action text-dark">
+              <h6>
+                Probabilística
+              </h6>
+              
+            </li>
+          </div>
+          
+        </p>
+       </div>
+      </div>
+    </div>
+    <div class="col">
+      <p class="text-dark text-justify">
+        En la versión determinística se selecciona al azar un número p de individuos 
+        (generalmente se escoge <img src="http://sabia.tic.udc.es/mgestal/cv/AAGGtutorial/img10.gif" alt=""> ). De entre los individuos seleccionados se selecciona el más apto para pasarlo a la siguiente generación
+      </p>
+      <p class="card-text text-dark text-justify">
+        La versión probabilística únicamente se diferencia en el paso de selección del ganador del torneo. 
+        En vez de escoger siempre el mejor se genera un número aleatorio del intervalo [0..1], si es mayor que un parámetro p (fijado para todo 
+        el proceso evolutivo) se escoge el individuo más alto y en caso contrario el menos apto. Generalmente p toma valores en el rango <img src="http://sabia.tic.udc.es/mgestal/cv/AAGGtutorial/img11.gif" alt=""></p>
+      </p>
+      <p class="card-text text-dark text-justify">
+        Variando el número de individuos que participan en cada torneo se puede modificar la presión de selección. 
+        Cuando participan muchos individuos en cada torneo, la presión de selección es elevada y los peores individuos 
+        apenas tienen oportunidades de reproducción. Un caso particular es el elitismo global. Se trata de un torneo en 
+        el que participan todos los individuos de la población con lo cual la selección se vuelve totalmente determinística. 
+        Cuando el tamaño del torneo es reducido, la presión de selección disminuye y los peores individuos tienen más oportunidades 
+        de ser seleccionados.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

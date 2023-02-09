@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="big-banner">
+    {% block sidebar %}
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header .text-dark">
+                <h3>Algoritmos de Optimización bio-Inspirados</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="/" text-dark>Inicio</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Algoritmos Genéticos</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="seleccion">Selección</a>
+                        </li>
+                        <li>
+                            <a href="cruce">Cruce</a>
+                        </li>
+                        <li>
+                            <a href="remplazo">Estrategias de remplazo</a>
+                        </li>
+                        <li>
+                            <a href="mutacion">Mutación</a>
+                        </li>
+                        <li>
+                            <a href="testalgoritmoGene">Cuestionario de algoritmos genéticos</a>
+                        </li>
+                        <li>
+                            <a href="ejeralgogene">Ejercicios con algoritmos genéticos</a>
+                        </li>
+                        <li>
+                            <a href="#">MATLAB ejemplos</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#page1" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle"> 
+                        Enjambre de partículas</a>
+                    <ul class="collapse list-unstyled" id="page1">
+                        <li>
+                            <a href="pso">PSO</a>
+                            <ul>
+                                <li>
+                                    <a href="pso-algoritmo">Algoritmo</a>
+                                </li>
+                                <li>
+                                    <a href="pso-parametro">Parámetros</a>
+                                </li>
+                                <li>
+                                    <a href="pso-topologias">Topologías</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="pso-funcionamiento">Funcionamiento interno</a>
+                        </li>
+                        <li>
+                            <a href="pso-variantes">Variantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Cuestionario de PSO</a>
+                        </li>
+                        <li>
+                            <a href="#">Ejercicios con PSO</a>
+                        </li>
+                        <li>
+                            <a href="#">Matlab ejemplos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#page2" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle"> 
+                    Colonia de hormigas</a>
+                <ul class="collapse list-unstyled" id="page2">
+                    <li>
+                        <a href="aco">ACO</a>
+                    </li>
+                    <li>
+                        <a href="aco-hormNatu">Comportamiento de una hormiga natural</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Cuestionario de ACO</a>
+                    </li>
+                    <li>
+                        <a href="#">Ejercicios con ACO</a>
+                    </li>
+                    <li>
+                        <a href="#">Matlab ejemplos</a>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <p style="text-align: center;"> Made by ITICS &#129505;<p></p>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            {% block content%}
+            {% endblock %}
+        </div>
+    </div>
+
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,81 @@
+{% extends "/base.html" %}
+{% block titile %} HomePage {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                        <h1 class="card-title text-center">Mutacion</h1>
+
+                        <p class="card-text text-dark text-justify">
+                            La mutación de un individuo provoca que alguno de sus genes, generalmente uno sólo, varíe su valor de forma aleatoria.
+                        </p>
+                        <p class="card-text text-dark text-justify">
+                            Aunque se pueden seleccionar los individuos directamente de la población actual y mutarlos antes de introducirlos 
+                            en la nueva población, la mutación se suele utilizar de manera conjunta con el operador de cruce. Primeramente se 
+                            seleccionan dos individuos de la población para realizar el cruce. Si el cruce tiene éxito entonces uno de los descendientes,
+                             o ambos, se muta con cierta probabilidad Pm. Se imita de esta manera el comportamiento que se da en la naturaleza, pues cuando se 
+                             genera la descendencia siempre se produce algún tipo de error, por lo general sin mayor trascendencia, en el paso de la carga genética de padres a hijos.
+
+                        </p>
+                                    
+            </div>
+            <div class="col-7 mt-3">
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card text-center mt-2" style="width: auto">
+                          <div class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GDbZVVyTt4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                         </div>
+                       </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+            </div>
+            <div class="col-5 mt-4">
+                <p class="card-text text-dark text-justify">
+                    La probabilidad de mutación es muy baja, generalmente menor al 1%. Esto se debe sobre todo a que los individuos suelen tener un ajuste menor 
+                    después de mutados. Sin embargo se realizan mutaciones para garantizar que ningún punto del espacio de búsqueda tenga una probabilidad nula de ser examinado.
+                </p>
+                
+            </div>
+            <div class="col-12 mt-3">
+                <p class="text-dark text-justify">
+                    Tal y como se ha comentado, la mutación más usual es el reemplazo aleatorio. Este consiste en variar aleatoriamente un gen de un cromosoma. Si se trabaja 
+                    con codificaciones binarias consistirá simplemente en negar un bit. También es posible realizar la mutación intercambiando los valores de dos alelos del cromosoma. Con otro tipo de 
+                    codificaciones no binarias existen otras opciones:
+                </p>
+                <p class="card-text text-dark text-justify">
+                    <ul class="text-dark text-justify">
+                        <li>
+                            <h6 class="text-dark text-justify">
+                                Incrementar o decrementar a un gen una pequeña cantidad generada aleatoriamente.
+                            </h6>
+                           
+                        </li>
+                        <li>
+                            <h6 class="text-dark text-justify">
+                                Multiplicar un gen por un valor aleatorio próximo a 1.
+                            </h6>
+                            
+                        </li>
+                    </ul>
+                </p>
+                <p class="card-text text-dark text-justify">
+                    Aunque no es lo más común, existen implementaciones de Algoritmos Genéticos en las que no 
+                    todos los individuos tienen los cromosomas de la misma longitud. Esto implica que no todos 
+                    ellos codifican el mismo conjunto de variables. En este caso existen mutaciones adicionales como puede ser añadir un nuevo gen o eliminar uno ya existente.
+                </p>    
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+{% endblock %}
